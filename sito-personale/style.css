@@ -1,0 +1,86 @@
+/* Sfondo e font base */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #000;
+  color: #fff8dc;
+}
+
+/* Header e navigazione */
+header {
+  background-color: #111;
+  padding: 1em;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+/* Menu di navigazione */
+nav a {
+  color: #000;
+  background: #ffd700;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  background: #e6c200;
+}
+
+/* Contenuto principale */
+main {
+  padding: 2em;
+  text-align: center;
+}
+
+/* Immagine About */
+.profile-photo {
+  width: 200px;
+  border-radius: 12px;
+  border: 2px solid #ffd700;
+  margin-bottom: 1em;
+}
+
+/* Form contatti */
+form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input,
+textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+}
+
+button {
+  background-color: #ffd700;
+  color: #000;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #e6c200;
+}
+
+/* Responsive layout */
+@media (max-width: 600px) {
+  nav a {
+    display: block;
+    margin: 10px auto;
+    width: 80%;
+  }
+}
