@@ -1,0 +1,106 @@
+// -----------------------------
+// VARIABILI
+// -----------------------------
+$main-bg: #000000;
+$main-text: #fff8dc;
+$accent: #FFD700;
+$accent-hover: #e6c200;
+$font-main: 'Segoe UI', sans-serif;
+
+// -----------------------------
+// STILI BASE
+// -----------------------------
+body {
+  margin: 0;
+  font-family: $font-main;
+  background-color: $main-bg;
+  color: $main-text;
+}
+
+// -----------------------------
+// HEADER E NAV
+// -----------------------------
+header {
+  background-color: darken($main-bg, 10%);
+  padding: 1em;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav a {
+  color: $main-bg;
+  background: $accent;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+
+  &:hover {
+    background: $accent-hover;
+  }
+}
+
+// -----------------------------
+// CONTENUTO PRINCIPALE
+// -----------------------------
+main {
+  padding: 2em;
+  text-align: center;
+}
+
+// -----------------------------
+// IMMAGINE PROFILO
+// -----------------------------
+.profile-photo {
+  width: 200px;
+  border-radius: 12px;
+  border: 2px solid $accent;
+  margin-bottom: 1em;
+}
+
+// -----------------------------
+// FORM
+// -----------------------------
+form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  input,
+  textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+  }
+
+  button {
+    background-color: $accent;
+    color: $main-bg;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+
+    &:hover {
+      background-color: $accent-hover;
+    }
+  }
+}
+
+// -----------------------------
+// RESPONSIVE
+// -----------------------------
+@media (max-width: 600px) {
+  nav a {
+    display: block;
+    margin: 10px auto;
+    width: 80%;
+  }
+}
